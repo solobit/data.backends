@@ -1,0 +1,23 @@
+Apache CouchDB vs. Couchbase
+
+While related from a technology perspective, Apache CouchDB and Couchbase have
+significantly different capabilities that support very different application
+developer needs and use cases. For example, Couchbase - like Membase - has a
+built-in, memcached-based caching technology that consistently provides sub
+millisecond read/write performance and is capable of hundreds of thousands of
+ops per second per node. Apache CouchDB is a disk-based database that usually
+is better suited for use cases where super low latency or high throughput is
+not a requirement. Couchbase also has a built-in clustering system that allows
+data to be automatically spread across multiple nodes. Apache CouchDB, on the
+other hand, is a single node solution with peer-to-peer replication technology
+and is better suited for decentralized systems and for holding data amounts
+that do not need to be spread out across multiple nodes.
+
+Even though use cases and capabilities are very different between Couchbase and
+Apache CouchDB, of course they do have things in common. Both are NoSQL
+document databases using JSON as their document format. The strong influence of
+Apache CouchDB on the storage approach means that Couchbase also uses an
+append-only file format and fundamentally the same approach to indexing and
+querying as Apache CouchDB; it just extends and optimizes it to the distributed
+case. Finally, Apache CouchDB replication technology is the underlying
+technology for Couchbase cross datacenter replication.
