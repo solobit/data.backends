@@ -1,0 +1,16 @@
+
+1) Install from AUR:
+a) snappy
+b) v8
+
+2) Download source
+a) http://packages.couchbase.com/releases/2.0.0/couchbase-server_src-2.0.0.tar.gz
+
+3) Move to home/build directory and make it
+a) cd $HOME/build
+b) tar xzf couchbase-...
+c) make
+
+
+
+
